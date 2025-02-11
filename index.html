@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff6f91;
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .heart-container {
+            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            background: #ff6f91;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            transform: rotate(-45deg);
+            animation: pulse 1.5s infinite;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background: #ff6f91;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 50px;
+            top: 0;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.2) rotate(-45deg);
+            }
+        }
+
+        .message {
+            margin: 30px auto;
+            font-size: 1.5rem;
+            max-width: 600px;
+            line-height: 1.8;
+        }
+
+        .button-container {
+            margin: 20px;
+        }
+
+        .love-button {
+            background: #ff6f91;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .love-button:hover {
+            background: #ff3b6d;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>Happy Valentine's Day, My Love!</header>
+
+    <div class="heart-container">
+        <div class="heart"></div>
+    </div>
+
+    <div class="message">
+        Dear Mei Andani,<br>
+        You are the light that brightens my world, the melody to my heart, and the reason I smile every day. On this special day, I want to remind you how much I cherish you and how grateful I am to have you in my life.
+    </div>
+
+    <div class="button-container">
+        <button class="love-button" onclick="showLove()">Click for a Surprise!</button>
+    </div>
+
+    <footer>&copy; 2025 MRMA with Love for You ❤️</footer>
+
+    <script>
+        function showLove() {
+    alert('I Love You to the Moon and Back! 🍫❤️');
+    window.location.href = "kado.html"; // Pastikan nama file ini sama dengan halaman kedua
+}
+
+    </script>
+</body>
+</html>
